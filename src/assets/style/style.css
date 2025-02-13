@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    background-color: #F6F6F6;
+}
+
+.container {
+    padding: 10px 0;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.com-flex {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav .nav-btns .btn {
+    width: 56px;
+    height: 37px;
+    top: 32px;
+    left: 135px;
+    border-radius: 4px;
+    padding: 8px;
+    gap: 10px;
+    background: rgba(93, 95, 239, 1);
+    border: 1px solid rgba(93, 95, 239, 1);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+nav .nav-btns .btn:active {
+    background: rgba(93, 95, 239, 0.418);
+    border: 1px solid rgba(93, 95, 239, 1);
+}
+
+nav .com-flex img {
+    border-radius: 50%;
+}
+
+nav .com-flex a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-decoration: none;
+    position: relative;
+    color: rgba(93, 95, 239, 1);
+}
+
+nav .com-flex a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(93, 95, 239, 0.418);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease 0.2s;
+}
+
+nav .com-flex a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.nav-line {
+    margin: 10px auto;
+    width: 95%;
+    height: 1px;
+    background-color: rgba(93, 95, 239, 0.418);
+}
+
+.com-flex li {
+    width: 69;
+    height: 31;
+    border-radius: 5px;
+    gap: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    color: rgb(124, 124, 131);
+}
+
+.com-flex li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(93, 95, 239, 0.418);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease 0.2s;
+}
+
+.com-flex li:hover {
+    color: rgb(93, 95, 239);
+}
+
+.com-flex li:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.container #search {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 20px 10px;
+    border: none;
+    font-weight: 400;
+}
+
+#search-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 10px 0;
+}
+
+#search-category .category {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#search-category .category p {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: 1px underline grey;
+}
+
+#search-category .category select {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+}
+
+#search-category .cat-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#search-category .cat-btns .btn {
+    border-radius: 4px;
+    padding: 8px 10px;
+    background: rgba(93, 95, 239, 1);
+    border: 1px solid rgba(93, 95, 239, 1);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#search-category .cat-btns .btn:active {
+    background: rgba(93, 95, 239, 0.418);
+    border: 1px solid rgba(93, 95, 239, 1);
+}
+
+/* Header */
+.header {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.header .head-img img {
+    border-radius: 20px;
+}
+
+.header .head-img img:hover {
+    box-shadow: 1px 0px 10px blue;
+}
+
+.header .head-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .head-title .com-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .head-title p {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: grey;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.33px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(148, 148, 148, 1);
+}
+
+

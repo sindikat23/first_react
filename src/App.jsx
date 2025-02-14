@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import img_first from "./assets/images/fashion1.png"
 import img_first2 from './assets/images/fashion2.png'
 import img_first3 from './assets/images/fashion3.png'
-import img_first4 from '../src/assets/images/fashion2.png'
+import img_first4 from './assets/images/fashion4.png'
 
 function App() {
 

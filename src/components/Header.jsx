@@ -1,8 +1,8 @@
 import React from 'react'
-import img_first from '../assets/images/fashion1.png'
-import img_first2 from '../assets/images/fashion2.png'
-import img_first3 from '../assets/images/fashion3.png'
-import img_first4 from '../assets/images/fashion4.png'
+// import img_first from '../assets/images/fashion1.png'
+// import img_first2 from '../assets/images/fashion2.png'
+// import img_first3 from '../assets/images/fashion3.png'
+// import img_first4 from '../assets/images/fashion4.png'
 
 import img_comment from '../assets/images/Group.png'
 import img_comment1 from '../assets/images/Group2.png'
@@ -10,12 +10,13 @@ import img_comment2 from '../assets/images/Group3.png'
 import img_comment3 from '../assets/images/Group4.png'
 
 
-function Header() {
+function Header({img}) {
+    
     return (
         <header className='container'>
             <div className='header'>
                 <div className='head-img'>
-                    <img src={img_first} alt="fashion-man" />
+                    <img src={img} alt="fashion-man" />
                 </div>
                 <div className='head-title'>
                     <h1>The best fashion influencers to follow for sartorial inspiration</h1>
@@ -30,7 +31,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div className='header'>
+            {/* <div className='header'>
                 <div className='head-img'>
                     <img src={img_first2} alt="fashion-man" />
                 </div>
@@ -80,7 +81,7 @@ function Header() {
                         <img src={img_comment3} alt="com_avatar" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </header>
     )
 }
